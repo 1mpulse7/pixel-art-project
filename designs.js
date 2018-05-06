@@ -49,7 +49,7 @@ $(document).ready(function(){
     down = false;
   })
 
-  gridArea.on('mouseover', 'th', function(){
+  gridArea.on('mouseover mouseleave', 'th', function(){
     event.preventDefault();
     if (down == true){
       $(this).css('background-color', colorSelect.val());
